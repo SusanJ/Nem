@@ -297,16 +297,13 @@ public void exitContent (xmlParser.ContentContext ctx) {
 }
 @Override
   public void enterChardata(xmlParser.ChardataContext ctx) {
-   System.out.println( "\n    ==ENTERChardata" );
- 
-   
-  ParseTree gp = grandParent( ctx );
-  if (gp != null ){
-   System.out.println( "    text: "+ctx.getText() +
-     "grandparent: "+gp.getText() );
-  }
-     
-} 
+   System.out.println( "\n   >==ENTERChardata" );
+   ParseTree gp = grandParent( ctx );
+   if (gp != null ){
+    System.out.println( "    mytext: "+ctx.getText() +
+     " my grandparent's text: "+gp.getText() );
+   }  
+ } 
 
  //This could be a token element.
 @Override

@@ -1,172 +1,148 @@
-// Generated from xmlParser.g4 by ANTLR 4.7.1
- package xml; 
+// Generated from PrtParser.g4 by ANTLR 4.7.1
+ package print; 
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 /**
- * This class provides an empty implementation of {@link xmlParserListener},
+ * This class provides an empty implementation of {@link PrtParserListener},
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
-public class xmlParserBaseListener implements xmlParserListener {
+public class PrtParserBaseListener implements PrtParserListener {
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDocument(xmlParser.DocumentContext ctx) { }
+	@Override public void enterDocument(PrtParser.DocumentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDocument(xmlParser.DocumentContext ctx) { }
+	@Override public void exitDocument(PrtParser.DocumentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterProlog(xmlParser.PrologContext ctx) { }
+	@Override public void enterProlog(PrtParser.PrologContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitProlog(xmlParser.PrologContext ctx) { }
+	@Override public void exitProlog(PrtParser.PrologContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterContent(xmlParser.ContentContext ctx) { }
+	@Override public void enterContent(PrtParser.ContentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitContent(xmlParser.ContentContext ctx) { }
+	@Override public void exitContent(PrtParser.ContentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLayment(xmlParser.LaymentContext ctx) { }
+	@Override public void enterTfiment(PrtParser.TfimentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLayment(xmlParser.LaymentContext ctx) { }
+	@Override public void exitTfiment(PrtParser.TfimentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRowment(xmlParser.RowmentContext ctx) { }
+	@Override public void enterElement(PrtParser.ElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRowment(xmlParser.RowmentContext ctx) { }
+	@Override public void exitElement(PrtParser.ElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTokment(xmlParser.TokmentContext ctx) { }
+	@Override public void enterReference(PrtParser.ReferenceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTokment(xmlParser.TokmentContext ctx) { }
+	@Override public void exitReference(PrtParser.ReferenceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterElement(xmlParser.ElementContext ctx) { }
+	@Override public void enterAttribute(PrtParser.AttributeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitElement(xmlParser.ElementContext ctx) { }
+	@Override public void exitAttribute(PrtParser.AttributeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterReference(xmlParser.ReferenceContext ctx) { }
+	@Override public void enterJustWS(PrtParser.JustWSContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitReference(xmlParser.ReferenceContext ctx) { }
+	@Override public void exitJustWS(PrtParser.JustWSContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAttribute(xmlParser.AttributeContext ctx) { }
+	@Override public void enterChardata(PrtParser.ChardataContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAttribute(xmlParser.AttributeContext ctx) { }
+	@Override public void exitChardata(PrtParser.ChardataContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterJustWS(xmlParser.JustWSContext ctx) { }
+	@Override public void enterMisc(PrtParser.MiscContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitJustWS(xmlParser.JustWSContext ctx) { }
+	@Override public void exitMisc(PrtParser.MiscContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterChardata(xmlParser.ChardataContext ctx) { }
+	@Override public void enterPrtstuff(PrtParser.PrtstuffContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitChardata(xmlParser.ChardataContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterMisc(xmlParser.MiscContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitMisc(xmlParser.MiscContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterBrlstuff(xmlParser.BrlstuffContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitBrlstuff(xmlParser.BrlstuffContext ctx) { }
+	@Override public void exitPrtstuff(PrtParser.PrtstuffContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

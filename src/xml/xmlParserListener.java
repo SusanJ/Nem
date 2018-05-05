@@ -127,4 +127,14 @@ public interface xmlParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitMisc(xmlParser.MiscContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link xmlParser#brlstuff}.
+	 * @param ctx the parse tree
+	 */
+	void enterBrlstuff(xmlParser.BrlstuffContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link xmlParser#brlstuff}.
+	 * @param ctx the parse tree
+	 */
+	void exitBrlstuff(xmlParser.BrlstuffContext ctx);
 }
